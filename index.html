@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <h1>Contact Us</h1>
+      </header>
+      <main class="form-container">
+        <form action="/" method="GET">
+          <section>
+            <article class="section1">
+              <h2>How can we help you?</h2>
+              <label for="name">Your Name</label>
+              <input type="text" name="userName" id="name" required />
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" name="userEmail" id="email" required />
+              <label for="phoneNumber">Your Phone Number</label>
+              <input type="tel" name="userNumber" id="phoneNumber" />
+              <label for="message">Your Message</label>
+              <textarea required name="userMessage" cols="30" rows="10" id="message"></textarea>
+              <label for="foundUsHow">How did you find us?</label>
+              <select name="foundUs" id="foundUsHow">
+                <option value="webSearch">Web Search</option>
+                <option value="byMouth">Word of Mouth</option>
+                <option value="webSearch">Newspaper Listing</option>
+                <option value="webSearch">Radio</option>
+              </select>
+            </article>
+            <article class="section2">
+              <h2>How should we reply?</h2>
+              <ul>
+                <li>
+                  <input type="radio" name="reply" id="call-me" value="Call me" />
+                  <label for="call-me">Call me</label>
+                </li>
+                <li>
+                  <input type="radio" name="reply" id="send-email" value="Send me an email" />
+                  <label for="send-email">Send me an email</label>
+                </li>
+                <li>
+                  <input type="radio" name="reply" id="dontreply" value="Don't reply" />
+                  <label for="dontreply">Don't reply</label>
+                </li>
+                <li class="terms-container">
+                  <input type="checkbox" name="acceptTerms" id="terms" />
+                  <label for="terms">Accept Terms</label>
+                </li>
+              </ul>
+            </article>
+            <div class="btns">
+              <button class="clearBtn" type="reset">Clear</button>
+              <button class="submitBtn" type="submit">Sumbit</button>
+            </div>
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
